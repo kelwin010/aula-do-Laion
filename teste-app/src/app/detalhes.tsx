@@ -1,13 +1,14 @@
-import { router, useRoute } from "expo-router";
+import { useRoute } from "expo-router";
 import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
-export default function Index() {
+export default function Detalhes() {
   const router = useRoute();
- return (
+
+  return (
     <View style={styles.container}>
       <Text style={styles.titulo}>Home</Text>
       <Text style={styles.subtitulo}> Bem vindo ao nosso APP!!!</Text>
-      <TouchableOpacity style={styles.botao} onPress={() => router.push("/detalhes")}>
-        <Text style={styles.botao}></Text>
+      <TouchableOpacity style={styles.botao} onPress={() => router.push("/")}>
+        <Text style={styles.botao}>Voltar</Text>
       </TouchableOpacity>
     </View>
   );
@@ -23,12 +24,12 @@ const styles = StyleSheet.create({
 
   },
   subtitulo: {
-    
-  },
-  botao:{
 
   },
-  textoBotao:{
+  botao: {
+
+  },
+  textoBotao: {
 
   }
 
