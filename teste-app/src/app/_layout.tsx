@@ -1,17 +1,17 @@
 import { Stack } from "expo-router";
-import { ScreenStack } from "react-native-screens";
 
 export default function RootLayout() {
   return (
     <Stack
       screenOptions={{
-        headerStyle: {backgroundColor: "#2563eb"},
+        headerStyle: { backgroundColor: "#017f0e" },
         headerTintColor: "#fff",
-        headerTitleStyle: {fontWeight: "700"}
-     }}
+        headerTitleStyle: { fontWeight: "700" },
+      }}
     >
-      <Stack.Screen name="index" options={{title: 'Home'}} />
-      <Stack.Screen name="detalhes" options={{title: 'Detalhes'}} />
+      <Stack.Screen name="index" options={{ title: "Artigo de pesca" }} />
+      <Stack.Screen name="detalhes" options={{ title: "Sobre a pesca" }} />
+      <Stack.Screen name="detalhes2" options={{ title: "Tela de detalhes 2" }} />
     </Stack>
   );
 }
